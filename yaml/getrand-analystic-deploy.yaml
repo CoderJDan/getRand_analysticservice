@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: analysticservice
-          image: jangdaniel/getrand-analystic-service:v1.0.5
+          image: jangdaniel/getrand-analystic-service:v1.0.7
           ports:
             - containerPort: 5004
