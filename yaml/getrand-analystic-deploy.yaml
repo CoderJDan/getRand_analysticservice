@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analysticservice
+  namespace: getrand
+  labels:
+    service: analysticservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: analysticservice
+  template:
+    metadata:
+      labels:
+        service: analysticservice
+    spec:
+      containers:
+        - name: analysticservice
+          image: jangdaniel/getrand-analystic-service:v1.0.5
+          ports:
+            - containerPort: 5004
