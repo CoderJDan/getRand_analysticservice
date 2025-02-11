@@ -11,27 +11,27 @@ import java.util.List;
 
 @FeignClient(name = "datacollectionservice")
 public interface DataCollectionServiceClient {
-    @GetMapping("/datacollectionservice/defaultPastOY/findall")
+    @GetMapping("/defaultPastOY/findall")
     public List<DefaultPastOYResponseDTO> getAllDefaultPastOY();
 
-    @GetMapping("/datacollectionservice/defaultPastOY/update")
+    @GetMapping("/defaultPastOY/update")
     public List<DefaultPastOYResponseDTO> updateDefaultPastOY();
 
-    @GetMapping("/datacollectionservice/realTimeTrend/findall")
+    @GetMapping("/realTimeTrend/findall")
     public List<RealTimeTrendResponseDTO> getAllRealTimeTrend();
 
-    @GetMapping("/datacollectionservice/realTimeTrend/update")
+    @GetMapping("/realTimeTrend/update")
     public List<RealTimeTrendResponseDTO> updateRealTimeTrend();
 
-    @GetMapping("/datacollectionservice/relatedTopics/findall")
+    @GetMapping("/relatedTopics/findall")
     public List<RelatedTopicsResponseDTO> getAllRelatedTopics();
 
-    @GetMapping("/datacollectionservice/relatedTopics/update")
+    @GetMapping("/relatedTopics/update")
     public List<RelatedTopicsResponseDTO> updateRelatedTopics();
 
-    @GetMapping("/datacollectionservice/relatedQueries/findall")
+    @GetMapping("/relatedQueries/findall")
     public List<RelatedQueriesResponseDTO> getAllRelatedQueries();
 
-    @GetMapping("/datacollectionservice/relatedQueries/update")
+    @GetMapping("/relatedQueries/update")
     public List<RelatedQueriesResponseDTO> updateRelatedQueries();
 }
