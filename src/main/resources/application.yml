@@ -6,14 +6,14 @@ spring:
     name: analysticservice
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/getrand?serverTimezone=UTC
+    url: jdbc:mysql://192.168.0.70:3306/getrand?serverTimezone=UTC
     username: mytest
     password: 1234
-  data:
-    redis:
-      host: localhost       # Redis 서버 주소
-      port: 6379            # Redis 서버 포트
-      timeout: 2000ms       # 연결 타임아웃
+#  data:
+#    redis:
+#      host: localhost       # Redis 서버 주소
+#      port: 6379            # Redis 서버 포트
+#      timeout: 2000ms       # 연결 타임아웃
 
 eureka:
   client:
